@@ -33,7 +33,7 @@ if ($appid == "") {
             throw new Exception('Application does not exist.');
         }
         
-        $out["data"] = $rows;
+        $out["params"] = $rows;
     } catch (Exception $e) {
         array_push($errors, array("message" => $e->getMessage()));
     }
